@@ -10,24 +10,22 @@ export Wrapper = () => {
   const handleTab = (e) => {
     // get button switched to
     // update tab
-    const {name, value} = e.target;
-    switch (e.value) {
-    case ("Portfolio"):
+    const [name, value] = e.target;
+
+    switch (value) {
+    case "Portfolio":
       return tab = "Portfolio";
-      break;
-    case ("About Me"):
-      return tab = "AboutMe";
-      break;
-    case ("Contact"):
+    case "Contact":
       return tab = "Contact";
-      break;
-    case ("Resume"):
-      return tab = "Resume"
-      break;
-    }
+    case "Resume":
+      return tab = "Resume";
+    case "About Me":
+    default:
+      return tab = "About Me";
+    };
     
     return 0;
-  }
+  };
   
   return (
     <div>
@@ -36,6 +34,5 @@ export Wrapper = () => {
       <Project tab={handleTab} />
       <Footer />
     </div>
-  );
-  
+  ); 
 }

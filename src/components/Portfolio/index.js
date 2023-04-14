@@ -2,11 +2,10 @@ import React from 'react';
 
 import repoInfo from "./../utils/repoInfo";
 
-// JSX for the repos
-export Portfolio = () => {
+export Portfolio = (props) => {
 
-
-  const RepoCard = (repo) => 
+  // JSX for the repos
+  const RepoCard = (repo) => {
 
     return (
       <div className="card" >	
@@ -20,12 +19,12 @@ export Portfolio = () => {
 	</div>
       </div>
     ); 
-  }
+  };
   
 
   return (
-    {
-      
-    	
-	
+      <div>
+	<p> Here is a bunch of filler text</p>
+      </div>
+  );
 };
