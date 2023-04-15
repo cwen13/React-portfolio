@@ -1,38 +1,36 @@
-import React, {userState, useEffect} from 'react';
-import Header from "./components/Header";
-import Navigation from "./components/Navigation";
-import Project from "./components/Project";
-import Footer from "./components/Footer";
+import React, {useState, useEffect} from 'react';
+import Header from "./../Header";
+import Project from "./../Project";
+import Footer from "./../Footer";
 
-export Wrapper = () => {
-  const [tab, setTab] = useState("AboutMe");
+const Wrapper = () => {
+  const [tab, setTab] = useState("About Me");
 
-  const handleTab = (e) => {
+  const handleTabSelection = (e) => {
     // get button switched to
     // update tab
-    const [name, value] = e.target;
+    const {name, value} = e.target;
 
     switch (value) {
     case "Portfolio":
-      return tab = "Portfolio";
+      return setTab("Portfolio");
     case "Contact":
-      return tab = "Contact";
+      return setTab("Contact");
     case "Resume":
-      return tab = "Resume";
+      return setTab("Resume");
     case "About Me":
     default:
-      return tab = "About Me";
-    };
-    
-    return 0;
+      return setTab("About Me");
+    }
   };
   
   return (
-    <div>
-      <Header />
-      <Navigation  />
-      <Project tab={handleTab} />
+    <>
+      <Header handleTabSelection={handleTabSelection} />
+      <Project renderTab={tab} />
       <Footer />
-    </div>
+    </>
   ); 
-}
+};
+
+export default Wrapper;

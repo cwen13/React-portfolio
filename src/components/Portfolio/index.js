@@ -1,8 +1,7 @@
 import React from 'react';
+//import repoInfo from "./../utils/repoInfo";
 
-import repoInfo from "./../utils/repoInfo";
-
-export Portfolio = (props) => {
+const Portfolio = (props) => {
 
   // JSX for the repos
   const RepoCard = (repo) => {
@@ -28,3 +27,6 @@ export Portfolio = (props) => {
       </div>
   );
 };
+
+export default Portfolio;
+

@@ -1,15 +1,18 @@
 import React from 'react';
 
-export Navigation = (props) => {
+const Navigation = (props) => {
   return (
-    <nav class="d-flex flex-coulumns justify-content-center">
-      <h1> Cody  Wenrich </h1>
-      <ol class="nav justify-content-center">
-	<li class="nav-item" ><button type="button" className="btn btn-priimary" onClick={props.handleTab}>About Me </li>
-	<li class="nav-item" ><button type="button" className="btn btn-priimary" onClick={props.handleTab}>Portfolio </li>
-	<li class="nav-item" ><button type="button" className="btn btn-priimary" onClick={props.handleTab}>Contact </li>
-	<li class="nav-item" ><button type="button" className="btn btn-priimary" onClick={props.handleTab}>Resume </li>
-      </ol>
+      <nav className="d-flex flex-coulumns aling-items-center">
+	<h1> Cody  Wenrich </h1>
+	<ol className="nav justify-content-center">
+	  <li className="nav-item" ><button type="button" className="btn btn-priimary" onClick={props.handleTabSelection}>About Me </button></li>
+	  <li className="nav-item" ><button type="button" className="btn btn-priimary" onClick={props.handleTabSelection}>Portfolio </button></li>
+	  <li className="nav-item" ><button type="button" className="btn btn-priimary" onClick={props.handleTabSelection}>Contact </button></li>
+	  <li className="nav-item" ><button type="button" className="btn btn-priimary" onClick={props.handleTabSelection}>Resume </button></li>
+	</ol>
       </nav>
   );
-}
+};
+
+export default Navigation;
+

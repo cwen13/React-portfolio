@@ -1,11 +1,15 @@
 import React from 'react';
-import "./../styles/Header.css"
+//import "./../styles/Header.css"
+import Navigation from "./../Navigation";
 
 // Need to have About Me, Portfolio, Contact, and Resume
-export Header = () => {
+const Header = (props) => {
   return (
     <div>
-      <Navigation />
+      <Navigation handleTabSelection={props.handleTabSelection} />
     </div>
   );
-}
+};
+
+export default Header;
+

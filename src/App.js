@@ -1,10 +1,11 @@
 import React from 'react';
-import logo from './logo.svg';
+//import logo from './logo.svg';
 import './App.css';
-import Wrapper from "./components/Wrapper"
+import Wrapper from './components/Wrapper';
+
 
 function App() {
-  return ( 
+  return (
     <Wrapper />
   );
 }
