@@ -5,14 +5,15 @@ import Footer from "./../Footer";
 
 const Wrapper = () => {
 
-  const [tab, setTab] = useState("About Me");
+  console.log("WRAPPER CONSOLE.LOG");
+  
+  const [tab, setTab] = useState("");
   
   const handleTabSelection = (e) => {
     // get button switched to
     // update tab
     console.log("WRAPPER SWITCH TAB");
     const {name, value} = e.target;
-    console.log(e.target.name);
     switch (name) {
     case "Portfolio":
       return setTab("Portfolio");
@@ -29,7 +30,7 @@ const Wrapper = () => {
   return (
     <>
       <Header handleTabSelection={handleTabSelection}/> 
-      <Project renderTab={tab} />
+      <Project tab={tab} setTab={setTab} />
       <Footer />
     </>
   ); 

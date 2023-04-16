@@ -34,7 +34,7 @@ const Projects = (props) => {
 
   const handleEmailChange = (e) => setEmail(e.target.value);
 
-  const handleComentChange = (e) => setComment(e.target.value);
+  const handleCommentChange = (e) => setComment(e.target.value);
   
   const AboutMe =() => {
     return (
@@ -94,15 +94,20 @@ const Projects = (props) => {
 
   const renderSection = (renderTab) => {
     console.log("PROJECT SWITCH TAB");
+    
     switch(renderTab) {
     case "Portfolio":
+      props.setTab("Portfolio");
       return <Portfolio />;
     case "Contact":
+      props.setTab("Contact");
       return <Contact />;
     case "Resume":
+      props.setTab("Resume");
       return <Resume />;
     case "About Me":
     default:
+      props.setTab("About Me");
       return <AboutMe />;
     }
   };
