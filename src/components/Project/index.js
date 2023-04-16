@@ -78,6 +78,7 @@ const Projects = (props) => {
 	    type="text"
 	    placeholder="Comment"
 	  />
+	  <button onClick={handleFormSubmit}>Send!</button>
 	</form>
       </div>
     );
@@ -86,29 +87,29 @@ const Projects = (props) => {
   const Resume = () => {
     return (
       <div>
-	<a href=""><i className="bi bi-file-earmark-person-fill"></i></a>
+	<a href=""><i className="bi bi-file-earmark-person-fill">RESUME</i></a>
       </div>
     );
   };
 
   const renderSection = (renderTab) => {
-	switch(renderTab) {
-	case "Portfolio":
-	  return <Portfolio />;
-	case "Contact":
-	  return <Contact />;
-	case "Resume":
-	  return <Resume />;
-	case "About Me":
-	default:
- 	  return <AboutMe />;
-	}
+    console.log("PROJECT SWITCH TAB");
+    switch(renderTab) {
+    case "Portfolio":
+      return <Portfolio />;
+    case "Contact":
+      return <Contact />;
+    case "Resume":
+      return <Resume />;
+    case "About Me":
+    default:
+      return <AboutMe />;
+    }
   };
   
   return (
     <main>
-      {renderSection(props.renderTab)};
-      Here is where there will be a projct
+      {renderSection(props.tab)};
     </main>
   );
 };

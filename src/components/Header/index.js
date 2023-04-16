@@ -6,7 +6,7 @@ import Navigation from "./../Navigation";
 const Header = (props) => {
   return (
     <div>
-      <Navigation handleTabSelection={props.handleTabSelection} />
+      <Navigation handleTabSelection={props.handleTabSelection}/> 
     </div>
   );
 };

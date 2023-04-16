@@ -3,7 +3,6 @@ import React from 'react';
 import './App.css';
 import Wrapper from './components/Wrapper';
 
-
 function App() {
   return (
     <Wrapper />
@@ -11,3 +10,4 @@ function App() {
 }
 
 export default App;
+

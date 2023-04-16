@@ -4,14 +4,16 @@ import Project from "./../Project";
 import Footer from "./../Footer";
 
 const Wrapper = () => {
-  const [tab, setTab] = useState("About Me");
 
+  const [tab, setTab] = useState("About Me");
+  
   const handleTabSelection = (e) => {
     // get button switched to
     // update tab
+    console.log("WRAPPER SWITCH TAB");
     const {name, value} = e.target;
-
-    switch (value) {
+    console.log(e.target.name);
+    switch (name) {
     case "Portfolio":
       return setTab("Portfolio");
     case "Contact":
@@ -26,11 +28,12 @@ const Wrapper = () => {
   
   return (
     <>
-      <Header handleTabSelection={handleTabSelection} />
+      <Header handleTabSelection={handleTabSelection}/> 
       <Project renderTab={tab} />
       <Footer />
     </>
   ); 
-};
+}; 
 
 export default Wrapper;
+
