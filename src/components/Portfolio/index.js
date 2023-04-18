@@ -1,30 +1,56 @@
 import React from 'react';
 //import repoInfo from "./../utils/repoInfo";
+import programs from "./assets/projectData.json";
 
-const Portfolio = (props) => {
+import glob_blog from "./assets/images/glob-blog.png";
+import pettit from "./assets/images/pettit.png";
+import notetaker from "./assets/images/notetaker.png";
+import daily_appointments from "./assets/images/daily_appointments.png";
+import quizer from "./assets/images/quizer.png";
+import explore_cast from "./assets/images/explore-cast.png";
+import first_portfolio from "./assets/images/first_portfolio.png";
 
-  // JSX for the repos
-  const RepoCard = (repo) => {
 
-    return (
-      <div className="card" >	
-	<img className="card-img-top" src={repo.image} />
-	<div className="card-body">
-	  <div className="card-header" > repo.title </div>
-	  <ul className="card-body">
-	    <li className="list-group-item" ><a href={repo.deploy}>Deployed page</a></li>
-	    <li className="list-group-item" ><a href={repo.repo}>Repo</a></li>
-	  </ul>
-	</div>
-      </div>
-    ); 
+
+
+const Portfolio = () => {
+
+  let images = {
+    glob_blog: glob_blog,
+    pettit: pettit,
+    notetaker: notetaker,
+    daily_appointments: daily_appointments,
+    quizer: quizer,
+    explore_cast: explore_cast,
+    first_portfolio: first_portfolio
   };
+		
   
-
   return (
-      <div>
-	<p> Here is a bunch of filler text</p>
-      </div>
+    <>
+      <h2 className="text-center">Portfolio</h2>
+      <ul className="d-flex flex-column align-items-center">
+	{programs.map((program) => (
+	  <li>
+	    <div className="card d-flex flex-column align-items-center"
+		 style={{width: "60rem"}}
+	    >	
+	      <img className="card-img-top"
+		   src={images[program.image]}
+		   style={{width: "50rem"}}
+	      />
+	      <div className="card-body">
+		<div className="card-header"> {program.title} </div>
+		<ul className="card-body">
+		  <li className="list-group-item" ><a href={program.deployed}>Deployed page</a></li>
+		  <li className="list-group-item" ><a href={program.repo}>Repo</a></li>
+		</ul>
+	      </div>
+	    </div>
+	  </li>
+	))}
+      </ul>
+    </>
   );
 };
 

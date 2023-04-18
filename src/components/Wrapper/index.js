@@ -2,17 +2,15 @@ import React, {useState, useEffect} from 'react';
 import Header from "./../Header";
 import Project from "./../Project";
 import Footer from "./../Footer";
+import Portfolio from "./../Portfolio";
 
 const Wrapper = () => {
-
-  console.log("WRAPPER CONSOLE.LOG");
   
   const [tab, setTab] = useState("");
   
   const handleTabSelection = (e) => {
     // get button switched to
     // update tab
-    console.log("WRAPPER SWITCH TAB");
     const {name, value} = e.target;
     switch (name) {
     case "Portfolio":
@@ -26,11 +24,13 @@ const Wrapper = () => {
       return setTab("About Me");
     }
   };
+
+
   
   return (
     <>
       <Header handleTabSelection={handleTabSelection}/> 
-      <Project tab={tab} setTab={setTab} />
+      <Project tab={tab} />
       <Footer />
     </>
   ); 
