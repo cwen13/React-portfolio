@@ -1,8 +1,10 @@
 import React, {useState, useEffect} from 'react';
 import Header from "./../Header";
-import Project from "./../Project";
-import Footer from "./../Footer";
 import Portfolio from "./../Portfolio";
+import Contact from "./../Contact";
+import Resume from "./../Resume";
+import AboutMe from "./../AboutMe";
+import Footer from "./../Footer";
 
 const Wrapper = () => {
   
@@ -25,12 +27,31 @@ const Wrapper = () => {
     }
   };
 
-
+  const renderSection = (renderTab) => {
+    
+    switch(renderTab) {
+    case "Portfolio":
+      //setTab("Portfolio");
+      return <Portfolio />;
+    case "Contact":
+      //setTab("Contact");
+      return <Contact />;
+    case "Resume":
+      //setTab("Resume");
+      return <Resume />;
+    case "About Me":
+    default:
+      //setTab("About Me");
+      return <AboutMe />;
+    }
+  };  
+  
+  
   
   return (
     <>
       <Header handleTabSelection={handleTabSelection}/> 
-      <Project tab={tab} />
+      {renderSection(tab)}
       <Footer />
     </>
   ); 
