@@ -1,0 +1,57 @@
+[
+  {
+    "title":"Glob-Blog",
+    "description":"Made from scratch blogging platform",
+    "repo":"https://github.com/cwen13/Glob-Blog",
+    "deployed":"https://glob-blog.herokuapp.com/",
+    "image":"glob_blog"
+  },
+
+  {
+    "title":"Pettit",
+    "descripiton":"Pet reviewing site, like reddit but for pets",
+    "repo":"https://github.com/cwen13/Pettit",
+    "deployed":"https://pett-it.herokuapp.com/",
+    "image":"pettit"
+  },
+
+  {
+    "title":"NoteTaker",
+    "descripiton":"Easy to use notetaker for everyday tasks.",
+    "repo":"https://github.com/cwen13/NoteTaker-Routes",
+    "deployed":"https://notetaker-routes.herokuapp.com/notes",
+    "image":"notetaker"
+  },
+
+  {
+    "title":"Daily Appointments",
+    "descripiton":"Daily time tracker to see what the day has in store.",
+    "repo":"https://github.com/cwen13/daily-appointments",
+    "deployed":"https://cwen13.github.io/daily-appointments/",
+    "image":"daily_appointments"
+  },
+
+  {
+    "title":"Quizer",
+    "descripiton":"In browser quic game powered by JavaScript.",
+    "repo":"https://github.com/cwen13/Quizer",
+    "deployed":"https://cwen13.github.io/Quizer/",
+    "image":"quizer"
+  },
+
+  {
+    "title":"Explore-cast",
+    "descripiton":"Get weather and events happeneing in a city.",
+    "repo":"https://github.com/cwen13/explore-cast",
+    "deployed":"https://cwen13.github.io/explore-cast/",
+    "image":"explore_cast"
+  },
+
+  {
+    "title":"First portfolio", 
+    "descripiton":"My first attmept at a programmer portfolio",
+    "repo":"https://github.com/cwen13/first-portfolio",
+    "deployed":"https://cwen13.github.io/first-portfolio/",
+    "image":"first_portfolio"
+  }
+]  
