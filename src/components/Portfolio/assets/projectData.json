@@ -2,9 +2,9 @@
   {
     "title":"Snackums",
     "description":"Made from scratch e-commerce",
-    "repo":"https://github.com/cwen13/snackums",
-    "deployed":"https://glob-blog.herokuapp.com/",
-    "image":"glob_blog"
+    "repo":"https://github.com/THoufty/snackums",
+    "deployed":"https://snackums.herokuapp.com/",
+    "image":"snackums"
   },
   {
     "title":"Glob-Blog",
