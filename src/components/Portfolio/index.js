@@ -1,5 +1,6 @@
 import React from 'react';
 import programs from "./assets/projectData.json";
+import snackums from "./assets/images/snackums.png";
 import glob_blog from "./assets/images/glob-blog.png";
 import pettit from "./assets/images/pettit.png";
 import notetaker from "./assets/images/notetaker.png";
@@ -11,6 +12,7 @@ import first_portfolio from "./assets/images/first_portfolio.png";
 const Portfolio = () => {
 
   let images = {
+    snackums: snackums,
     glob_blog: glob_blog,
     pettit: pettit,
     notetaker: notetaker,
