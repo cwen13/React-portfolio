@@ -1,9 +1,10 @@
 {
   "files": {
-    "main.css": "/React-portfolio/static/css/main.a75997f8.css",
-    "main.js": "/React-portfolio/static/js/main.08c44e9d.js",
+    "main.css": "/React-portfolio/static/css/main.1c3c11f9.css",
+    "main.js": "/React-portfolio/static/js/main.262b7b8a.js",
     "static/js/787.a2cb61a6.chunk.js": "/React-portfolio/static/js/787.a2cb61a6.chunk.js",
     "static/media/first_portfolio.png": "/React-portfolio/static/media/first_portfolio.fdde3dcbb8853f58881a.png",
+    "static/media/snackums.png": "/React-portfolio/static/media/snackums.5da2f81dfbf1ed7f3898.png",
     "static/media/portrait.jpg": "/React-portfolio/static/media/portrait.9582293dd8a50e7849df.jpg",
     "static/media/brand-icons.svg": "/React-portfolio/static/media/brand-icons.6729d29753e000c17489.svg",
     "static/media/pettit.png": "/React-portfolio/static/media/pettit.ccf78215d07b28f7f2c6.png",
@@ -15,8 +16,8 @@
     "static/media/brand-icons.eot": "/React-portfolio/static/media/brand-icons.d68fa3e67dbb653a13ce.eot",
     "static/media/brand-icons.ttf": "/React-portfolio/static/media/brand-icons.65a2fb6d9aaa164b41a0.ttf",
     "static/media/brand-icons.woff": "/React-portfolio/static/media/brand-icons.cac87dc00c87a5d74711.woff",
+    "static/media/Resume.pdf": "/React-portfolio/static/media/Resume.6a140b200fbc37b61423.pdf",
     "static/media/brand-icons.woff2": "/React-portfolio/static/media/brand-icons.278156e41e0ad908cf7f.woff2",
-    "static/media/Resume.pdf": "/React-portfolio/static/media/Resume.66de9cf61ee534c7df2b.pdf",
     "static/media/icons.woff": "/React-portfolio/static/media/icons.425399f81e4ce7cbd967.woff",
     "static/media/icons.woff2": "/React-portfolio/static/media/icons.38c6d8bab26db77d8c80.woff2",
     "static/media/daily_appointments.png": "/React-portfolio/static/media/daily_appointments.7d35bc19ef5c1b8af134.png",
@@ -28,12 +29,12 @@
     "static/media/notetaker.png": "/React-portfolio/static/media/notetaker.090523ad723a50039f02.png",
     "static/media/outline-icons.woff2": "/React-portfolio/static/media/outline-icons.687a4990ea22bb1a49d4.woff2",
     "index.html": "/React-portfolio/index.html",
-    "main.a75997f8.css.map": "/React-portfolio/static/css/main.a75997f8.css.map",
-    "main.08c44e9d.js.map": "/React-portfolio/static/js/main.08c44e9d.js.map",
+    "main.1c3c11f9.css.map": "/React-portfolio/static/css/main.1c3c11f9.css.map",
+    "main.262b7b8a.js.map": "/React-portfolio/static/js/main.262b7b8a.js.map",
     "787.a2cb61a6.chunk.js.map": "/React-portfolio/static/js/787.a2cb61a6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a75997f8.css",
-    "static/js/main.08c44e9d.js"
+    "static/css/main.1c3c11f9.css",
+    "static/js/main.262b7b8a.js"
   ]
 }
