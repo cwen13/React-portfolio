@@ -18,7 +18,7 @@ const styles = {
 
 const Footer = () => {
   return (
-      <footer className="continer-fluid bg-danger fixed-bottom p-2">
+    <footer className="continer-fluid bg-danger  p-2" >
 	<ul className="d-flex flex-row justify-content-evenly">
 	  <li>
 	    <a href="https://github.com/cwen13">

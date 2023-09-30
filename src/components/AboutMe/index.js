@@ -49,17 +49,20 @@ const AboutMe =() => {
 	
 	<div className="continer w-50"> 
 	  <p>
-	  I am seeking a position as a web developer for a great company that will foster my developement as a developer.
+	    After obtaining a BS in Mechanical Engineering computers and software continued to interest me. I wanted to know how they worked and how I could instruct them to do tasks. My first jump into learning to code was in a programming class my freshman year. But by the end of schooling, I was teaching myself python and how to run a Linux machine. My desire to code would get me a few web scraping gigs utilizing both Selenium and Beautiful Soup. I then found myself working in the manufacturing industry at Multilink.
 	</p>
-	<p>
-	  Having gone to school for mechanical engineering I was always interested in programming. I would think of ways to solve class problems with a program. So in the short time we used matlab I was excited and loved it. But I was too deep in my studies and I thought about changing my major but just finished my degree.
+	  <p>
+	    Starting as an inventory lead, I was quickly promoted and later asked to extend the ERP system with VBScript. That was where I had my first piece of code in a live production system. Doing this on another occasion I followed it up with putting together two python programs that were placed on all employee accessible computer stations. Then finally I scrapped the company's website to help get a feel for what exactly was displaying on it for review.
 	</p>
-	<p>
-	  This drive to develop code compelled me to learn how to scrape websites with python and even got a couple of gigs doing it even. In addition, being able to contribute code to the work place helped keep the fire alive in me.
+	  <p>
+	    I stepped away while receiving my Engineering Intern Certificate and before I started working at Bendix. While at Bendix I was working with excel workbooks with code in them. This drove me to dive back into coding. I researched a few code camps and decided on Case Western Reserve University's program in partnership with 2U/edX.
 	</p>
-	<p>
-	  So then while not feeling I was in the right place for me I sought out coding to make the career change. Having done the code camp through CWRU I am nothing but thrilled to see out a job I will not only be capable of doing but will enjoy for a very long time.
-	</p>
+	  <p>
+	    Completing CWRU's code camp was the culmination of many years' desires to be able to really learn coding and make a career out of it. I completed the camp in May 2023 and was hired the 2U as a TA for the same course right afterwards. I have begun working with a class and am enjoying my time helping them learn the material. As well as taking time to relearn some of the finer details of the web development course.
+	  </p>
+	  <p>
+	    I did take some time away from code for a little this year as a few things in my life were in transition and resettling down. Now that things are settled, I am working to expand my skills and build projects so I can show my skill set and continuing improvement of abilities. 
+	    </p>
       </div>
     </div>
   );

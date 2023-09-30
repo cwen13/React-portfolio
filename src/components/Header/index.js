@@ -6,7 +6,7 @@ import Navigation from "./../Navigation";
 const Header = (props) => {
   return (
     <div className="bg-dark">
-      <h1 className="text-center text-light"> Cody  Wenrich </h1>
+      <h1 className="text-center text-light"> Cody  Wenrich-Clegg </h1>
       <Navigation handleTabSelection={props.handleTabSelection}/> 
     </div>
   );
