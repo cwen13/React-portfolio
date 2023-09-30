@@ -6,9 +6,15 @@ import Resume from "./../Resume";
 import AboutMe from "./../AboutMe";
 import Footer from "./../Footer";
 
+import "./style.css";
+
 const Wrapper = () => {
   
   const [tab, setTab] = useState("");
+
+  useEffect(() => {
+    document.title = "Cody Wenrich-Clegg Portfolio";
+  },[]);
   
   const handleTabSelection = (e) => {
     // get button switched to
@@ -32,17 +38,17 @@ const Wrapper = () => {
     switch(renderTab) {
     case "Portfolio":
       //setTab("Portfolio");
-      return <Portfolio />;
+      return (<div className="main"><Portfolio /></div>);
     case "Contact":
       //setTab("Contact");
-      return <Contact />;
+      return (<div className="main"><Contact /></div>);
     case "Resume":
       //setTab("Resume");
-      return <Resume />;
+      return (<div className="main"><Resume /></div>);
     case "About Me":
     default:
       //setTab("About Me");
-      return <AboutMe />;
+      return (<div className="main"><AboutMe /></div>);
     }
   };  
   
